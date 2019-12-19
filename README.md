@@ -30,6 +30,12 @@ ralexsander/sped:efd
 Para facilitar é possível executar via docker-compose:
 
 ```
-wget https://raw.githubusercontent.com/ralexsander/docker-sped/master/docker-compose.yml
-docker-compose up
+curl https://raw.githubusercontent.com/ralexsander/docker-sped/master/docker-compose.yml -o /tmp/docker-compose.yml
+docker-compose -f /tmp/docker-compose.yml up && docker-compose -f /tmp/docker-compose.yml down
 ```
+
+## Links
+
+- [Docker Hub](https://hub.docker.com/r/ralexsander/sped/)
+- [Git Hub](https://github.com/ralexsander/docker-sped/)
+- [SPED](http://sped.rfb.gov.br/)
