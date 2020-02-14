@@ -1,4 +1,4 @@
-# Validor de arquivos fiscais do SPED
+# Validador de arquivos fiscais do SPED
 
 > Essa adaptação para docker permite que os validadores do SPED rodem em qualquer SO, incluindo Mac OS X.
 
