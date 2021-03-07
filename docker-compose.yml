@@ -6,8 +6,22 @@ services:
     image: ralexsander/sped:efd
     container_name: sped-efd
     volumes:
-      - ./recursos:/home/sped/ProgramasSPED/Fiscal2/recursos
+      - efd:/home/sped/ProgramasSPED/Fiscal2/recursos
       - ./arquivos:/home/sped/arquivos
     environment:
       - DISPLAY=host.docker.internal:0
     restart: "no"
+    
+  sped-contrib:
+    image: ralexsander/sped:contrib
+    container_name: sped-contrib
+    volumes:
+      - contrib:/home/sped/ProgramasSPED/EFDContribuicoes/recursos
+      - ./arquivos:/home/sped/arquivos
+    environment:
+      - DISPLAY=host.docker.internal:0
+    restart: "no"
+    
+volumes:
+  efd:
+  contrib:
